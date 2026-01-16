@@ -1,0 +1,56 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Layout Header */
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.dc-logo {
+  width: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.navbar li {
+  list-style: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.barra-hover {
+  position: absolute;
+  background-color: rgb(5, 132, 250);
+  width: 100%;
+  height: 4px;
+  margin-top: 30px;
+  display: none;
+}
+
+.navbar li:hover {
+  color: rgb(5, 132, 250);
+  cursor: pointer;
+}
+
+.navbar li:hover .barra-hover {
+  display: block;
+}
