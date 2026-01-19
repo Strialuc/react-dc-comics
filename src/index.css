@@ -10,6 +10,16 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
 /* Layout Header */
 
 header {
@@ -20,8 +30,8 @@ header {
   margin: 20px;
 }
 
-.dc-logo {
-  width: 40px;
+.logo {
+  width: 80px;
 }
 
 .navbar {
@@ -53,4 +63,66 @@ header {
 
 .navbar li:hover .barra-hover {
   display: block;
+}
+
+/* Layout Main */
+
+
+.info-section {
+  background-color: rgb(5, 132, 250);
+  height: 150px;
+  gap: 20px;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-section ul {
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-section li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-section img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.jumbotron {
+  background-image: url("/src/assets/jumbotron.jpg");
+  background-size: cover;
+  height: 200px;
+}
+
+.container-fumetti {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.fumetto-card {
+  width: calc(100 / 6);
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 50px;
+}
+
+.fumetto-card img {
+  width: 100%;
+  display: block;
+}
+
+.fumetto-card h3 {
+  color: white;
 }
