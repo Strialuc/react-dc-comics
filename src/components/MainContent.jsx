@@ -1,5 +1,5 @@
-
-import ListaFumetti from "./ListaFumetti"
+import buydigitalcomic from "../assets/buy-comics-digital-comics.png"
+import ListaFumetti from "../components/card/ListaFumetti"
 
 const MainContent = () => {
     return (
@@ -15,7 +15,8 @@ const MainContent = () => {
                 <div className="container">
                     <ul>
                         <li>
-                            <img src="src/assets/buy-comics-digital-comics.png" alt="" />
+
+                            <img src={buydigitalcomic} alt="" />
                             DIGITAL COMICS</li>
                         <li>
                             <img src="src/assets/buy-comics-merchandise.png" alt="" />

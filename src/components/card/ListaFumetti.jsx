@@ -1,12 +1,12 @@
-import comics from "./comics";
+import comics from "../comics";
+import ListaCard from "./ListaCard";
 
 const ListaFumetti = () => {
     const renderFumetti = () => {
         return comics.map((fumetto) => (
-            <div className="fumetto-card" key={fumetto.id}>
-                <img src={fumetto.thumb} alt={fumetto.title} />
-                <h3>{fumetto.series}</h3>
-            </div>
+            <ListaCard key={fumetto.id}
+                fumetto={fumetto}
+            />
         ));
     };
 

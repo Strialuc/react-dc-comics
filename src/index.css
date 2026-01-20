@@ -109,13 +109,15 @@ header {
   display: flex;
   flex-wrap: wrap;
 
+
 }
 
 .fumetto-card {
-  width: calc(100 / 6);
+  width: calc(100% / 6 - 20px);
   padding: 10px;
   max-width: 100%;
-  margin: 0 50px;
+  margin: 0 10px;
+
 }
 
 .fumetto-card img {
@@ -125,4 +127,28 @@ header {
 
 .fumetto-card h3 {
   color: white;
+}
+
+/* Layout footer */
+
+.container-footer-dc {
+  background-image: url("/src/assets/footer-bg.jpg");
+  height: 400px;
+}
+
+.container-footer-sign {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  height: 50px;
+}
+
+.btn {
+  border-color: blue;
+  padding: 5px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
 }
